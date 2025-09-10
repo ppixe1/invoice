@@ -6,31 +6,52 @@ document.addEventListener('DOMContentLoaded', () => {
 
     
     let companyAddressDom = document.getElementById('company-Address');
-    companyAddressDom.innerHTML = data.companyAddress;
+    companyAddressDom.innerHTML = `
+        ${data.companyAddress[0].Address}<br>
+        ${data.companyAddress[0].Address2}<br>
+        ${data.companyAddress[0].State} ${data.companyAddress[0].ZipCode}
+    `;
     companyAddressDom.classList.remove('noValue');
 
 
 
     let companyContactDom = document.getElementById('company-Contact');
-    companyContactDom.innerHTML = data.companyContact;
+    companyContactDom.innerHTML = `
+        Phone: ${data.companyContact[0].Phone}<br>
+        Email: ${data.companyContact[0].Email}
+    `;
     companyContactDom.classList.remove('noValue');
 
 
 
     let statementDom = document.getElementById('statement');
-    statementDom.innerHTML = data.statement;
+    statementDom.innerHTML = `
+        Statement: ${data.statement[0].Statement}<br>
+        Date: ${data.statement[0].Date}<br>
+        Customer ID: ${data.statement[0].CustomerID}
+    `;
     statementDom.classList.remove('noValue');
 
 
 
     let billDom = document.getElementById('bill-Address');
-    billDom.innerHTML = data.billAddress;
+    billDom.innerHTML = `
+        Bill To:<br>
+        ${data.billAddress[0].Address}<br>
+        ${data.billAddress[0].Address2}<br>
+        ${data.billAddress[0].State} ${data.billAddress[0].ZipCode}
+    `;
     billDom.classList.remove('noValue');
 
 
 
     let companyPeymentDom = document.getElementById('payment');
-    companyPeymentDom.innerHTML = data.paymentInfo;
+    companyPeymentDom.innerHTML = `
+        Payment Method: ${data.paymentInfo[0].PaymentMethod}<br>
+        Card Number: ${data.paymentInfo[0].CardNumber}<br>
+        Expiration Date: ${data.paymentInfo[0].ExpirationDate}<br>
+        CVV: ${data.paymentInfo[0].CVV}
+    `;
     companyPeymentDom.classList.remove('noValue');
 
 

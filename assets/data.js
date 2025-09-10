@@ -1,13 +1,40 @@
 const data = {
     //Company
     companyName: 'Sripatum University',
-    companyAddress: '2410 2 Phahonyothin Rd<br> Khwaeng Sena Nikhom, Khet Chatuchak<br>Krung Thep Maha Nakhon 10900',
-    companyContact: 'Phone: 02 579 1111<br>Email: sripatum@spu.com',
+    companyAddress: [
+        {
+            Address: '2410 2 Phahonyothin Rd',
+            Address2: 'Khwaeng Sena Nikhom, Khet Chatuchak',
+            State: 'Krung Thep Maha Nakhon',
+            ZipCode: '10900'
+        }
+    ],
+    companyContact: [
+        {
+            Phone: '02 579 1111',
+            Email: 'sripatum@spu.com',
+        }
+    ],
+
 
     //Statement
-    statement: 'Statement: 1234<br>Date: 01/01/2023<br>Customer ID: 651153198',
-    billAddress: 'Bill To:<br>89/9 Tha Kasem<br>Mueng Sakaeo<br>City, Sakaeo 27000',
-    
+    statement: [
+        {
+            Statement: '1234',
+            Date: '01/01/2023',
+            CustomerID: '651153198'
+        }
+    ],
+    billAddress: [
+        {
+            Address: '89/9 Tha Kasem',
+            Address2: 'Mueng Sakaeo',
+            State: 'Sakaeo',
+            ZipCode: '27000'
+        }
+    ],
+
+
     //Items
     Items: [
         {
@@ -44,6 +71,14 @@ const data = {
         }
     ],
 
+
     //Payment
-    paymentInfo: 'Payment Method: Credit Card<br>Card Number: 1234 1234 1234 1234<br>Expiration Date: 01/01/2023<br>CVV: 123',
+    paymentInfo: [
+        {
+            PaymentMethod: 'Credit Card',
+            CardNumber: '1234 1234 1234 1234',
+            ExpirationDate: '01/01/2023',
+            CVV: '123'
+        }
+    ],
 }
