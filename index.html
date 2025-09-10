@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="Author" content="PixelDev">
+    <title>invoice</title>
+    <link rel="stylesheet" href="./assets/index.css">
+</head>
+<body>
+    <div class="container">
+        <div class="info">
+            <h1 class="title" style="text-align: center; margin: 0px 0px 50px 0px;">Invoice</h1>
+            <h1 class="title noValue" id="company-Name">[Company Name]</h1>
+            <div class="company-info">
+                <div class="info-box1">
+                    <p class="noValue" id="company-Address">
+                        Street Address<br>
+                        Address 2<br>
+                        City, State Zip Code
+                    </p>
+                </div>
+                <div class="info-box2">
+                    <p class="noValue" id="company-Contact">
+                        Phone: N/A<br>
+                        Email: N/A
+                    </p>
+                </div>
+            </div>
+
+            
+            <h1 class="title">Statement</h1>
+            <div class="customer-info">
+                <div class="info-box1">
+                    <p class="noValue" id="statement">
+                        Statement: N/A<br>
+                        Date: N/A<br>
+                        Customer ID: N/A
+                    </p>
+                </div>
+                <div class="info-box2">
+                    <p class="noValue" id="bill-Address">
+                        Bill To:<br>
+                        Street Address<br>
+                        Address 2<br>
+                        City, State Zip Code
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="list">
+            <table id="tableList">
+                <tr>
+                    <th>Date</th>
+                    <th>Type</th>
+                    <th>Invoice</th>
+                    <th>Description</th>
+                    <th>Amount</th>
+                    <th>Payment</th>
+                </tr>
+            </table>
+        </div>
+
+        <div class="payment-info">
+            <h1 class="title">Payment Information</h1>
+            <p class="noValue" id="payment">
+                Payment Method: N/A<br>
+                Card Number: N/A<br>
+                Expiration Date: N/A<br>
+                CVV: N/A
+            </p>
+        </div>
+        <h3 style="text-align: center; background-color: #f7f7f7;">67163280  นายคณิศร์ จำจด</h3>
+    </div>
+
+    <script src="./assets/index.js"></script>
+    <script src="./assets/data.js"></script>
+</body>
+</html>
